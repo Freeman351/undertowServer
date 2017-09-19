@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.freenan.undertow</groupId>
+	<artifactId>undertow.server</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>undertowServer</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<!-- undertow servlet support compile dependenies -->
+		<dependency>
+			<groupId>io.undertow</groupId>
+			<artifactId>undertow-core</artifactId>
+			<version>1.0.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.undertow</groupId>
+			<artifactId>undertow-servlet</artifactId>
+			<version>1.0.1.Final</version>
+		</dependency>
+		
+		<!-- undertow jsp support compile dependenies -->
+		<dependency>
+		    <groupId>io.undertow.jastow</groupId>
+		    <artifactId>jastow</artifactId>
+		    <version>1.0.1.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.metadata</groupId>
+		    <artifactId>jboss-metadata-common</artifactId>
+		    <version>8.0.0.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.metadata</groupId>
+		    <artifactId>jboss-metadata-web</artifactId>
+		    <version>8.0.0.Final</version>
+		</dependency>
+		
+		<!--undertow jsp support  runtime dependenies -->
+		<dependency>
+		    <groupId>org.jboss.spec.javax.servlet</groupId>
+		    <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+		    <version>1.0.0.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.spec.javax.servlet.jsp</groupId>
+		    <artifactId>jboss-jsp-api_2.3_spec</artifactId>
+		    <version>1.0.1.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.eclipse.jdt.core.compiler</groupId>
+		    <artifactId>ecj</artifactId>
+		    <version>4.3.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.glassfish</groupId>
+		    <artifactId>javax.el</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.spec.javax.servlet.jstl</groupId>
+		    <artifactId>jboss-jstl-api_1.2_spec</artifactId>
+		    <version>1.1.0.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>xalan</groupId>
+		    <artifactId>xalan</artifactId>
+		    <version>2.7.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mkyong.common</groupId>
+			<artifactId>spring2-mvc-xml-hello-world</artifactId>
+		    <version>1.0-SNAPSHOT</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/lib/spring2-mvc-xml-hello-world-1.0-SNAPSHOT.war</systemPath>
+		</dependency>		
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>
